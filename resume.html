@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covey Ure | Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root { --byu-navy: #002E5D; --byu-gold: #C5A508; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #eef2f7; }
+        .navbar { background-color: var(--byu-navy) !important; }
+        .navbar-brand { color: #ffffff !important; font-weight: 700; }
+        .nav-link { color: #ccd8e8 !important; }
+        .nav-link:hover, .nav-link.active { color: var(--byu-gold) !important; }
+        .resume-wrapper { max-width: 860px; margin: 40px auto 50px; background-color: #ffffff; padding: 55px 65px; border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.11); }
+        .resume-header { text-align: center; border-bottom: 3px solid var(--byu-navy); padding-bottom: 24px; margin-bottom: 32px; }
+        .resume-header h1 { font-size: 2.6rem; font-weight: 800; color: var(--byu-navy); margin-bottom: 6px; }
+        .resume-header .tagline { color: #555; font-size: 1rem; margin-bottom: 10px; }
+        .resume-header .contact-line { font-size: 0.9rem; color: #666; }
+        .resume-header .contact-line a { color: var(--byu-navy); text-decoration: none; }
+        .resume-header .contact-line a:hover { text-decoration: underline; }
+        .resume-header .contact-line span { margin: 0 6px; color: #bbb; }
+        .section-block { margin-bottom: 34px; }
+        .section-block h2 { font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--byu-navy); border-bottom: 2px solid var(--byu-gold); padding-bottom: 6px; margin-bottom: 18px; }
+        .entry { margin-bottom: 22px; }
+        .entry-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 4px; }
+        .entry-title { font-weight: 700; font-size: 1rem; color: #111; }
+        .entry-org { font-size: 0.93rem; color: var(--byu-navy); font-style: italic; }
+        .entry-date { font-size: 0.88rem; color: #777; white-space: nowrap; font-weight: 500; }
+        .entry-body { margin-top: 8px; }
+        .entry-body ul { margin: 0; padding-left: 20px; color: #333; font-size: 0.93rem; }
+        .entry-body ul li { margin-bottom: 4px; line-height: 1.55; }
+        .skill-tag { background-color: var(--byu-navy); color: white; padding: 4px 13px; border-radius: 16px; font-size: 0.83rem; margin: 3px 2px; display: inline-block; }
+        .skill-tag.gold { background-color: var(--byu-gold); color: var(--byu-navy); }
+        .skill-tag.light { background-color: #e8eef5; color: var(--byu-navy); border: 1px solid #b0c0d8; }
+        footer { background-color: var(--byu-navy); color: #6b86a0; padding: 28px 0; font-size: 0.88rem; }
+        footer a { color: var(--byu-gold); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 650px) { .resume-wrapper { padding: 28px 18px; margin: 15px; } .resume-header h1 { font-size: 1.9rem; } .entry-top { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Covey Ure</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="resume-wrapper">
+            <div class="resume-header">
+                <h1>Covey Ure</h1>
+                <p class="tagline">Neuroscience Undergraduate &bull; Researcher &bull; Aspiring Real Estate Professional</p>
+                <div class="contact-line">
+                    Provo, Utah <span>|</span>
+                    <a href="mailto:coveyure@gmail.com">coveyure@gmail.com</a> <span>|</span>
+                    <a href="https://github.com/coveyure" target="_blank" rel="noopener">github.com/coveyure</a> <span>|</span>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/coveyure</a>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h2><i class="bi bi-mortarboard-fill me-2"></i>Education</h2>
+                <div class="entry">
+                    <div class="entry-top">
+                        <div>
+                            <div class="entry-title">Bachelor of Science &mdash; Neuroscience</div>
+                            <div class="entry-org">Brigham Young University (BYU) &mdash; Provo, Utah</div>
+                        </div>
+                        <div class="entry-date">Expected May 2027</div>
+                    </div>
+                    <div class="entry-body">
+                        <ul>
+                            <li>GPA: 3.7 / 4.0 &bull; Dean's List — three consecutive semesters</li>
+                            <li><strong>Relevant Coursework:</strong> Cellular Neuroscience, Behavioral Neuroscience, Research Methods, Biostatistics, Organic Chemistry I &amp; II, Human Anatomy &amp; Physiology, Genetics</li>
+                            <li>BYU Pre-Medical Scholars Program member (competitive, application-based)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h2><i class="bi bi-briefcase-fill me-2"></i>Work Experience</h2>
+                <div class="entry">
+                    <div class="entry-top">
+                        <div>
+                            <div class="entry-title">Real Estate Sales Intern</div>
+                            <div class="entry-org">CastleRock Real Estate &mdash; Utah</div>
+                        </div>
+                        <div class="entry-date">Summer 2026</div>
+                    </div>
+                    <div class="entry-body">
+                        <ul>
+                            <li>Assist licensed agents with residential property showings, client communications, and contract preparation</li>
+                            <li>Conduct comparative market analyses to inform pricing recommendations for sellers</li>
+                            <li>Coordinate open house logistics, digital property listings, and client follow-ups across CRM platforms</li>
+                            <li>Develop professional client relationship management skills in a performance-driven sales environment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="entry-top">
+                        <div>
+                            <div class="entry-title">Undergraduate Research Assistant</div>
+                            <div class="entry-org">BYU Neuroscience Laboratory &mdash; Provo, Utah</div>
+                        </div>
+                        <div class="entry-date">Jan 2025 &ndash; Present</div>
+                    </div>
+                    <div class="entry-body">
+                        <ul>
+                            <li>Assist with behavioral neuroscience experiments examining neural mechanisms of spatial learning and memory in rodent models</li>
+                            <li>Perform tissue preparation, histological staining, and light microscopy under faculty supervision</li>
+                            <li>Contribute to data collection, analysis pipelines (Python / MATLAB), and lab meeting presentations</li>
+                            <li>Maintain detailed electronic lab notebooks and ensure compliance with IACUC animal care protocols</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="entry-top">
+                        <div>
+                            <div class="entry-title">Campus Tour Guide</div>
+                            <div class="entry-org">Brigham Young University &mdash; Provo, Utah</div>
+                        </div>
+                        <div class="entry-date">Sep 2023 &ndash; Dec 2024</div>
+                    </div>
+                    <div class="entry-body">
+                        <ul>
+                            <li>Led engaging 90-minute campus tours for prospective students and families (groups of 10&ndash;25)</li>
+                            <li>Represented BYU's academic programs, campus culture, and student life with accuracy and enthusiasm</li>
+                            <li>Assisted in training 6 new tour guides on presentation techniques and campus content</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h2><i class="bi bi-tools me-2"></i>Skills</h2>
+                <div class="mb-3">
+                    <strong style="font-size:0.9rem; color:#444;">Technical &amp; Computational:</strong><br>
+                    <span class="skill-tag">Python</span><span class="skill-tag">MATLAB</span><span class="skill-tag">R (basic)</span>
+                    <span class="skill-tag">Microsoft Excel</span><span class="skill-tag">HTML &amp; CSS</span><span class="skill-tag">Statistical Analysis</span>
+                </div>
+                <div class="mb-3">
+                    <strong style="font-size:0.9rem; color:#444;">Laboratory:</strong><br>
+                    <span class="skill-tag gold">Histology &amp; Staining</span><span class="skill-tag gold">Behavioral Testing</span>
+                    <span class="skill-tag gold">Light Microscopy</span><span class="skill-tag gold">PCR (basic)</span><span class="skill-tag gold">Lab Safety / IACUC</span>
+                </div>
+                <div>
+                    <strong style="font-size:0.9rem; color:#444;">Professional:</strong><br>
+                    <span class="skill-tag light">Communication</span><span class="skill-tag light">Client Relations</span>
+                    <span class="skill-tag light">Market Research</span><span class="skill-tag light">Public Speaking</span><span class="skill-tag light">Team Leadership</span>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h2><i class="bi bi-trophy-fill me-2"></i>Honors &amp; Awards</h2>
+                <ul style="font-size:0.94rem; color:#333; padding-left:20px;">
+                    <li class="mb-2"><strong>Dean's List</strong> — Brigham Young University (Spring 2024, Fall 2024, Winter 2025)</li>
+                    <li class="mb-2"><strong>BYU Merit Scholarship</strong> — Competitive merit-based scholarship awarded for academic achievement</li>
+                    <li class="mb-2"><strong>Pre-Medical Scholars Program</strong> — Invitation-only BYU program for students pursuing medicine or research</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2><i class="bi bi-people-fill me-2"></i>Activities &amp; Interests</h2>
+                <ul style="font-size:0.94rem; color:#333; padding-left:20px;">
+                    <li class="mb-2"><strong>Pickleball</strong> — Competitive intramural player; passionate about strategy and the sport's rapid growth</li>
+                    <li class="mb-2"><strong>BYU Neuroscience Club</strong> — Active member; attends research talks, journal clubs, and networking events</li>
+                    <li class="mb-2"><strong>Volunteer Service</strong> — Community service through BYU service-learning programs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2026 Covey Ure &nbsp;|&nbsp; <a href="index.html">Home</a></p>
+            <p class="mb-0" style="font-size:0.8rem;">Built with Bootstrap 5 &bull; Brigham Young University</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

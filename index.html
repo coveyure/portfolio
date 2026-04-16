@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covey Ure | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root { --byu-navy: #002E5D; --byu-gold: #C5A508; --byu-light: #f4f7fc; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; }
+        .navbar { background-color: var(--byu-navy) !important; }
+        .navbar-brand { color: #ffffff !important; font-weight: 700; font-size: 1.25rem; }
+        .nav-link { color: #ccd8e8 !important; }
+        .nav-link:hover, .nav-link.active { color: var(--byu-gold) !important; }
+        .hero-section {
+            background: linear-gradient(160deg, #001d3d 0%, var(--byu-navy) 50%, #003f7f 100%);
+            color: white; padding: 110px 0 85px; text-align: center;
+        }
+        .hero-section h1 { font-size: 3.6rem; font-weight: 800; color: var(--byu-gold); text-shadow: 1px 2px 6px rgba(0,0,0,0.5); }
+        .hero-section .lead { color: #c8d8ee; font-size: 1.2rem; }
+        .hero-section .sub-lead { color: #8daac8; font-size: 1rem; }
+        .avatar {
+            width: 130px; height: 130px; border-radius: 50%;
+            background-color: var(--byu-gold); color: var(--byu-navy);
+            font-size: 3.2rem; font-weight: 800;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 24px; border: 4px solid rgba(255,255,255,0.25);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+        }
+        .social-btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 46px; height: 46px; border-radius: 50%;
+            background-color: rgba(255,255,255,0.15); color: white;
+            font-size: 1.4rem; margin: 0 6px; text-decoration: none;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .social-btn:hover { background-color: var(--byu-gold); color: var(--byu-navy); transform: translateY(-2px); }
+        .btn-hero-primary {
+            background-color: var(--byu-gold); color: var(--byu-navy); border: none;
+            font-weight: 700; padding: 12px 30px; font-size: 1rem; border-radius: 6px;
+        }
+        .btn-hero-primary:hover { background-color: #d4b010; color: var(--byu-navy); }
+        .btn-hero-outline {
+            border: 2px solid rgba(255,255,255,0.5); color: white; background: transparent;
+            font-weight: 600; padding: 12px 28px; border-radius: 6px;
+        }
+        .btn-hero-outline:hover { border-color: white; background-color: rgba(255,255,255,0.1); color: white; }
+        .section-title { color: var(--byu-navy); font-weight: 700; border-bottom: 3px solid var(--byu-gold); padding-bottom: 10px; margin-bottom: 30px; display: inline-block; }
+        .about-section { background-color: var(--byu-light); padding: 70px 0; }
+        .fact-card { border: none; border-radius: 10px; box-shadow: 0 3px 14px rgba(0,0,0,0.08); }
+        .fact-card li { padding: 6px 0; border-bottom: 1px solid #eee; }
+        .fact-card li:last-child { border-bottom: none; }
+        .skills-section { padding: 70px 0; }
+        .skill-card { border: none; border-radius: 10px; box-shadow: 0 3px 14px rgba(0,0,0,0.08); height: 100%; }
+        .skill-card .card-header { background-color: var(--byu-navy); color: var(--byu-gold); font-weight: 700; border-radius: 10px 10px 0 0; padding: 14px 18px; }
+        .skill-badge { background-color: var(--byu-navy); color: white; padding: 5px 13px; border-radius: 20px; font-size: 0.85rem; margin: 4px 2px; display: inline-block; }
+        .highlights-section { background-color: var(--byu-navy); padding: 70px 0; color: white; }
+        .highlights-section h2 { color: var(--byu-gold); font-weight: 700; border-bottom: 3px solid var(--byu-gold); padding-bottom: 10px; margin-bottom: 35px; display: inline-block; }
+        .highlight-card { background-color: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 30px 20px; text-align: center; height: 100%; }
+        .highlight-card .icon { font-size: 2.8rem; color: var(--byu-gold); margin-bottom: 14px; }
+        .highlight-card h5 { color: white; font-weight: 700; margin-bottom: 8px; }
+        .highlight-card p { color: #8daac8; font-size: 0.93rem; margin-bottom: 0; }
+        footer { background-color: #001428; color: #6b86a0; padding: 30px 0; font-size: 0.9rem; }
+        footer a { color: var(--byu-gold); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Covey Ure</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="avatar">CU</div>
+            <h1>Covey Ure</h1>
+            <p class="lead mb-2">Neuroscience Student &bull; Brigham Young University</p>
+            <p class="sub-lead mb-4">Aspiring researcher &bull; Real estate professional &bull; Pickleball enthusiast</p>
+            <div class="mb-4">
+                <a href="resume.html" class="btn btn-hero-outline me-3">View Resume</a>
+                <a href="mailto:coveyure@gmail.com" class="btn btn-hero-primary">Get in Touch</a>
+            </div>
+            <div>
+                <a href="https://github.com/coveyure" class="social-btn" title="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/" class="social-btn" title="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:coveyure@gmail.com" class="social-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead text-dark">Hi — I'm <strong>Covey Ure</strong>, an undergraduate Neuroscience student at Brigham Young University with a deep curiosity about how the brain shapes behavior, memory, and human experience.</p>
+                    <p>My academic path has taken me from cellular neuroscience coursework to hands-on research in the BYU Neuroscience Laboratory, where I assist with behavioral experiments studying learning and memory. I'm passionate about applying scientific thinking to real-world problems.</p>
+                    <p>This summer, I'm excited to join <strong>CastleRock Real Estate</strong>, where I'll apply analytical thinking and relationship-building in a fast-paced market environment. Outside of academics, you'll find me on the pickleball courts — the fastest-growing sport in America.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card fact-card p-4">
+                        <h5 class="text-muted mb-3" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">Quick Facts</h5>
+                        <ul class="list-unstyled text-start mb-0">
+                            <li class="mb-1 py-2"><i class="bi bi-mortarboard-fill me-2" style="color:var(--byu-navy);"></i><strong>BYU</strong> — B.S. Neuroscience, Class of 2027</li>
+                            <li class="mb-1 py-2"><i class="bi bi-building me-2" style="color:var(--byu-navy);"></i><strong>CastleRock Real Estate</strong> — Intern, Summer 2026</li>
+                            <li class="mb-1 py-2"><i class="bi bi-flask-fill me-2" style="color:var(--byu-navy);"></i>Undergraduate Research Assistant, BYU Neuro Lab</li>
+                            <li class="mb-1 py-2"><i class="bi bi-trophy-fill me-2" style="color:var(--byu-navy);"></i>Dean's List &bull; GPA: 3.7</li>
+                            <li class="py-2"><i class="bi bi-geo-alt-fill me-2" style="color:var(--byu-navy);"></i>Based in Provo, Utah</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="container">
+            <div class="text-center mb-5"><h2 class="section-title">Skills &amp; Expertise</h2></div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="skill-card card">
+                        <div class="card-header"><i class="bi bi-brain me-2"></i>Academic &amp; Scientific</div>
+                        <div class="card-body">
+                            <span class="skill-badge">Neuroscience</span><span class="skill-badge">Biology</span>
+                            <span class="skill-badge">Organic Chemistry</span><span class="skill-badge">Biostatistics</span>
+                            <span class="skill-badge">Research Design</span><span class="skill-badge">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card card">
+                        <div class="card-header"><i class="bi bi-laptop me-2"></i>Technical</div>
+                        <div class="card-body">
+                            <span class="skill-badge">Python</span><span class="skill-badge">MATLAB</span>
+                            <span class="skill-badge">R (basic)</span><span class="skill-badge">Microsoft Excel</span>
+                            <span class="skill-badge">HTML / CSS</span><span class="skill-badge">Statistical Software</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card card">
+                        <div class="card-header"><i class="bi bi-people-fill me-2"></i>Professional</div>
+                        <div class="card-body">
+                            <span class="skill-badge">Communication</span><span class="skill-badge">Client Relations</span>
+                            <span class="skill-badge">Market Analysis</span><span class="skill-badge">Public Speaking</span>
+                            <span class="skill-badge">Team Leadership</span><span class="skill-badge">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="highlights-section">
+        <div class="container">
+            <div class="text-center mb-5"><h2>What Drives Me</h2></div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="highlight-card">
+                        <div class="icon"><i class="bi bi-brain"></i></div>
+                        <h5>Neuroscience Research</h5>
+                        <p>Fascinated by how the brain encodes memory, drives behavior, and responds to injury or disease.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-card">
+                        <div class="icon"><i class="bi bi-house-fill"></i></div>
+                        <h5>Real Estate</h5>
+                        <p>Excited to apply analytical thinking and interpersonal skills at CastleRock Real Estate this summer.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-card">
+                        <div class="icon"><i class="bi bi-activity"></i></div>
+                        <h5>Pickleball</h5>
+                        <p>Passionate player who loves the strategy, accessibility, and incredible community of the sport.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2026 Covey Ure &nbsp;|&nbsp; <a href="resume.html">Resume</a></p>
+            <p class="mb-0" style="font-size:0.82rem;">Built with Bootstrap 5 &bull; Brigham Young University</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

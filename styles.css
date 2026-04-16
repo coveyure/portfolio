@@ -1,0 +1,280 @@
+/* =========================================
+   Covey Ure – Pickleball Page Custom CSS
+   Linked from: scratch.html
+   ========================================= */
+
+/* ── Body & Global ────────────────────────── */
+body {
+    background-color: #d4edda;          /* custom background: light court green */
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── DIV 1: Navigation bar ────────────────── */
+.nav-bar {
+    background-color: #1b5e20;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-bar .nav-brand {
+    color: #ffe082;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-bar .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.nav-bar .nav-links a:hover {
+    color: #ffe082;
+    text-decoration: underline;
+}
+
+/* ── DIV 2: Hero / Header section ────────── */
+.hero-section {
+    background-color: #2e7d32;
+    background-image: linear-gradient(135deg, #1b5e20 0%, #388e3c 55%, #1b5e20 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px 60px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.hero-section h1 {
+    font-size: 3.2em;
+    color: #ffe082;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero-section .hero-subtitle {
+    font-size: 1.2em;
+    color: #c8e6c9;
+    margin-bottom: 6px;
+}
+
+.hero-section .hero-byline {
+    font-size: 1em;
+    color: #a5d6a7;
+    font-style: italic;
+}
+
+/* ── DIV 3: Content card sections ─────────── */
+.content-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+    border-left: 5px solid #2e7d32;
+}
+
+.content-section h2 {
+    color: #1b5e20;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.75em;
+    border-bottom: 2px solid #a5d6a7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* ── DIV 4: Video section ─────────────────── */
+.video-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 40px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.10);
+}
+
+.video-section h2 {
+    color: #1b5e20;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.75em;
+    margin-bottom: 20px;
+}
+
+/* Responsive 16:9 video wrapper */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 4px solid #2e7d32;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ── DIV 5: Tableau stats section ─────────── */
+.tableau-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+    border-left: 5px solid #388e3c;
+}
+
+.tableau-section h2 {
+    color: #1b5e20;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.75em;
+    border-bottom: 2px solid #a5d6a7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* ── DIV 6: App link section ──────────────── */
+.app-link-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 40px;
+    background-color: #1b5e20;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.20);
+}
+
+.app-link-section h2 {
+    color: #ffe082;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.75em;
+    margin-bottom: 14px;
+}
+
+.app-link-section p {
+    color: #c8e6c9;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* ── DIV 7: Page footer ───────────────────── */
+.footer-div {
+    background-color: #1b5e20;
+    color: #c8e6c9;
+    text-align: center;
+    padding: 25px 20px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+.footer-div a {
+    color: #ffe082;
+    text-decoration: none;
+}
+
+.footer-div a:hover {
+    text-decoration: underline;
+}
+
+/* ── Images ────────────────────────────────── */
+.pickleball-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 3px solid #a5d6a7;
+    display: block;
+}
+
+/* ── Rules / nested list ──────────────────── */
+.rules-list {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #2c3e50;
+}
+
+.rules-list > li {
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #1b5e20;
+}
+
+.rules-list > li > ul {
+    margin-top: 8px;
+    font-weight: normal;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #333333;
+}
+
+.rules-list > li > ul > li {
+    margin-bottom: 5px;
+}
+
+/* ── App launch button ────────────────────── */
+.app-btn {
+    display: inline-block;
+    background-color: #ffe082;
+    color: #1b5e20;
+    padding: 14px 36px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.15em;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.app-btn:hover {
+    background-color: #ffd740;
+    transform: translateY(-2px);
+}
+
+/* ── Fun fact callout box ─────────────────── */
+.fun-fact {
+    background-color: #f1f8e9;
+    border: 2px solid #81c784;
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin: 20px 0;
+    color: #1b5e20;
+    font-style: italic;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 0.97em;
+}
+
+/* ── Responsive tweaks ────────────────────── */
+@media (max-width: 680px) {
+    .content-section,
+    .video-section,
+    .tableau-section,
+    .app-link-section {
+        margin: 20px 12px;
+        padding: 22px 18px;
+    }
+    .hero-section h1 { font-size: 2.2em; }
+    .nav-bar { flex-direction: column; gap: 10px; }
+    .nav-bar .nav-links { flex-wrap: wrap; justify-content: center; }
+}

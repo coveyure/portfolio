@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickleball | Covey Ure</title>
+    <!-- Custom stylesheet created from scratch — no Bootstrap -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════════════════
+         DIV 1: Navigation Bar
+         Navigation BACK to professional pages as required
+         ═══════════════════════════════════════════════════════ -->
+    <div class="nav-bar">
+        <a href="#top" class="nav-brand">🏓 Pickleball with Covey</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="app.html">🎮 Score Tracker App</a>
+            <a href="#about">About</a>
+            <a href="#rules">Rules</a>
+            <a href="#video">Watch</a>
+            <a href="#stats">Stats</a>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         DIV 2: Hero / Header Section
+         ═══════════════════════════════════════════════════════ -->
+    <div class="hero-section" id="top">
+        <h1>🏓 Pickleball</h1>
+        <p class="hero-subtitle">The Fastest Growing Sport in America</p>
+        <p class="hero-byline">A passion page by Covey Ure &mdash; BYU Neuroscience</p>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         DIV 3: About Section
+         ON-PAGE ANCHOR: id="about"
+         IMAGE: Wikimedia Commons (not from Bootstrap theme)
+         ═══════════════════════════════════════════════════════ -->
+    <div class="content-section" id="about">
+        <h2>What is Pickleball?</h2>
+        <p>
+            Pickleball is a paddle sport that brilliantly combines elements of tennis, badminton, and
+            ping-pong. Played on a badminton-sized court with a slightly modified tennis net, it has
+            become one of the fastest-growing sports in the United States — with over
+            <strong>36 million players</strong> by 2024.
+        </p>
+
+        <!-- IMAGE 1: Aerial view of pickleball courts — from Wikimedia Commons, NOT Bootstrap -->
+        <img
+            class="pickleball-img"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_Pickleball_Courts.jpg"
+            alt="Aerial view of outdoor pickleball courts at a recreational facility">
+
+        <p>
+            The sport was invented in <strong>1965</strong> on Bainbridge Island, Washington, when
+            three fathers &mdash; Joel Pritchard, Bill Bell, and Barney McCallum &mdash; improvised
+            a backyard game for their bored kids using ping-pong paddles, a wiffle ball, and a
+            lowered badminton net. What started as a family improvisation became a global phenomenon.
+        </p>
+
+        <div class="fun-fact">
+            💡 <strong>Fun Fact:</strong> The sport's unusual name supposedly comes from the Pritchard
+            family dog, "Pickles," who would relentlessly chase the ball during early games — though
+            some accounts dispute this charming origin story!
+        </div>
+
+        <!-- IMAGE 2: Court layout diagram — from Wikimedia Commons, NOT Bootstrap -->
+        <img
+            class="pickleball-img"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Pickleball_court_diagram.svg"
+            alt="Pickleball court diagram showing dimensions, kitchen zone, and service boxes">
+
+        <p>
+            Whether you're 8 or 80, pickleball is remarkably accessible. The smaller court means
+            less ground to cover, the underhand serve is easy to learn, and the perforated plastic
+            ball travels slower than a tennis ball &mdash; creating longer, more social rallies and
+            a wonderfully welcoming community.
+        </p>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         DIV 4: Rules Section
+         ON-PAGE ANCHOR: id="rules"
+         NESTED LIST: ordered list (ol) containing unordered lists (ul) inside each item
+         ═══════════════════════════════════════════════════════ -->
+    <div class="content-section" id="rules">
+        <h2>Rules &amp; Strategy</h2>
+        <p>
+            Pickleball has four core rule categories. Each contains specific rules every player
+            needs to master to compete effectively:
+        </p>
+
+        <!-- REQUIRED: Ordered list with unordered list embedded inside each item -->
+        <ol class="rules-list">
+            <li>Serving Rules
+                <ul>
+                    <li>The serve must be underhand — paddle contact must be below the waist</li>
+                    <li>The serve is hit diagonally cross-court into the opponent's service box</li>
+                    <li>Only one serve attempt is allowed (except when the ball clips the net cord)</li>
+                    <li>The server must keep both feet behind the baseline during the entire serve</li>
+                    <li>In doubles, both partners on a side get to serve before possession changes</li>
+                </ul>
+            </li>
+            <li>The Kitchen — Non-Volley Zone
+                <ul>
+                    <li>The "kitchen" is a 7-foot zone extending from the net on both sides of the court</li>
+                    <li>You cannot volley (strike the ball before it bounces) while standing in the kitchen</li>
+                    <li>You may enter the kitchen to play a ball that has already bounced in it</li>
+                    <li>Momentum carrying you into the kitchen after a volley is also a fault</li>
+                    <li>The kitchen is the defining feature that separates pickleball strategy from tennis</li>
+                </ul>
+            </li>
+            <li>Scoring
+                <ul>
+                    <li>Standard games are played to <strong>11 points</strong>, and you must win by 2</li>
+                    <li>Tournament games sometimes go to 15 or 21 points (also win by 2)</li>
+                    <li>In traditional scoring, only the <em>serving</em> side can earn a point</li>
+                    <li>In rally scoring (used in some pro leagues), every rally earns a point</li>
+                    <li>In doubles, the score is called as three numbers: server score, receiver score, server number (1 or 2)</li>
+                </ul>
+            </li>
+            <li>The Double Bounce Rule
+                <ul>
+                    <li>After the serve, each side must let the ball bounce once before volleying</li>
+                    <li>This means the serve must bounce <em>and</em> the return of serve must bounce</li>
+                    <li>After those two mandatory bounces, either team may volley or play off a bounce</li>
+                    <li>This rule prevents the serving team from immediately rushing and dominating the net</li>
+                    <li>It creates a natural "dinking" phase at the start of each rally — a hallmark of the game</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         DIV 5: Video Section
+         ON-PAGE ANCHOR: id="video"
+         EMBEDDED YOUTUBE VIDEO via iframe (required)
+         Note: Does not work locally — works once hosted online (per assignment)
+         ═══════════════════════════════════════════════════════ -->
+    <div class="video-section" id="video">
+        <h2>Watch Pickleball in Action</h2>
+        <p>
+            See why millions of people across America are falling in love with this incredible sport!
+        </p>
+
+        <!-- REQUIRED: YouTube embed via iframe -->
+        <!-- If video doesn't load: go to YouTube → search "pickleball highlights" →
+             click any video → copy the code after "?v=" in the URL → replace pkYH6RpEPGI below -->
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/pkYH6RpEPGI"
+                title="Pickleball Highlights and Introduction"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <p style="margin-top: 15px; color: #555555; font-size: 0.88em; font-style: italic; font-family: Arial, sans-serif;">
+            Video displays once the site is hosted online (not in local preview — this is expected per course instructions).
+        </p>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         DIV 6: Tableau Stats Section
+         ON-PAGE ANCHOR: id="stats"
+         LIVE INTERACTIVE TABLEAU EMBED (not a screenshot)
+         Viz: PickleballPaddleStats/Dashboard1 from public.tableau.com
+         ═══════════════════════════════════════════════════════ -->
+    <div class="tableau-section" id="stats">
+        <h2>📊 Pickleball Stats Dashboard</h2>
+        <p>
+            Explore this live, interactive Tableau visualization featuring real pickleball paddle
+            statistics. Hover, filter, and click to interact — it is fully embedded, not a screenshot!
+        </p>
+
+        <!-- REQUIRED: Live and interactive Tableau Public embed -->
+        <div class='tableauPlaceholder' id='viz1744744032423' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img
+                        alt='Pickleball Paddle Stats Dashboard'
+                        src='https://public.tableau.com/static/images/Pi/PickleballPaddleStats/Dashboard1/1_rss.png'
+                        style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='PickleballPaddleStats/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1744744032423');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         DIV 7: App Link Section — link to web app
+         ═══════════════════════════════════════════════════════ -->
+    <div class="app-link-section">
+        <h2>🎮 Pickleball Score Tracker App</h2>
+        <p>
+            Built an interactive score tracking app with real pickleball scoring rules,
+            serve tracking, rally log, and undo functionality. Give it a try!
+        </p>
+        <a href="app.html" class="app-btn">Launch the Score Tracker →</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         DIV 8: Footer
+         ═══════════════════════════════════════════════════════ -->
+    <div class="footer-div">
+        <p>
+            &copy; 2026 Covey Ure &nbsp;|&nbsp; BYU Neuroscience &nbsp;|&nbsp;
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="resume.html">Resume</a> &nbsp;|&nbsp;
+            <a href="app.html">Score Tracker App</a>
+        </p>
+    </div>
+
+</body>
+</html>
